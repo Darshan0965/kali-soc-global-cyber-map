@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KALI-SOC | Global Cyber Threat Map</title>
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>🌐 KALI-SOC – Global Cyber Threat Map</h1>
+    <p>Live attacks detected using Kali Linux tools</p>
+</header>
+
+<!-- MAP -->
+<div id="map"></div>
+
+<!-- TABLE -->
+<div id="table-container">
+    <h2>🔴 Live Attack Feed</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Attack</th>
+                <th>Source</th>
+                <th>Target</th>
+                <th>Severity</th>
+                <th>Threat Score</th>
+                <th>Tools Detected</th>
+            </tr>
+        </thead>
+        <tbody id="attack-table"></tbody>
+    </table>
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="js/map.js"></script>
+
+</body>
+</html>
